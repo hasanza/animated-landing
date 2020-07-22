@@ -1,65 +1,87 @@
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+
   .boxes {
     flex-direction: column;
     padding: 5%;
+    height: 100vh;
+    
+  }
+
+  .box {
+    width: 50px;
   }
   
   .segment {
       height: 100vh;
+      flex-direction: column;
   }
 
-  .segment img {
-    visibility: collapse;
+  .msg {
+    font-size: small;
+  }
+
+  img {
+    width: 80%;
+  }
 }
 
-}
 
 .container {
   display: flex;
-  width: 100%;
-  height: 100%;
   position: relative;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .segment {
   display: flex;
   align-items: center;
-  padding: 0% 7%;
-  /* margin: 2% 0; */
   height: 100vh;
-  border-bottom: 5px solid black;
+  width: 88vw;
+  
+  
+  padding: 0 5%;
+  
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2.7em;
 }
 
-.container div:nth-child(even){
+.container .segment:nth-child(even){
     background-color: purple;
-    color: white
+    color: white;
+    border: 5px black solid;
+    border-radius: 7px;
 }
+
+.img {
+  width: 80%;
+}
+
 
 .boxes {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 5%;
-  width: 50%;
-  height: 60vh;
+  width: 100%;
+  height: 90%;
 
 }
+
+
 
 .box {
 color: purple;
   border-radius: 7px;
-  width: 35em;
-  height: 15em;
+  width: 80%;
+  height: 15%;
   text-align: center;
   padding: 0 5%;
   margin: 2% 7%;
@@ -85,7 +107,6 @@ color: purple;
   background-color: purple;
   color: white;
   border-top: black 5px solid;
-  width: 100%;
   position: relative;
 }
 
